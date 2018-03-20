@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>《中超风云2》手游官方网站_中超官方授权正版手游</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="keywords" content="中超风云、中超风云2、中超风云2官网、中超、足球、中超足球游戏、懂球帝、足球大咖、国脚、国足、U23、中超风云手游、足球手游、恒大、上港、苏宁、权健、申花、国安">
+  <meta name="description" content="中超联赛官方授权游戏，通过极致的3D效果，逼真的AI表现，先进的动补技术和多样的操作模式，还原最真实的中超赛事，品质全面提升的中超风云第二代！">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/list.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css?v=20180305">
+  <script src="js/common.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-activity-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/isMobile.min.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="components/index.js"></script>
+  <style>
+    .linehight_3{
+      color: #98ed1e!important;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <hulai-headertwo></hulai-headertwo>
+    <div class="listmid">
+      <p class="big_title">游戏资料</p>
+      <div class="mid_right">
+
+        <div class="nav_title">
+            <ul class="right_title">
+              <li @mouseenter="goGetList('游戏资料-最新',1,12)" :class="{'select':isChecked == 1}">最新</li>
+              <li @mouseenter="goGetList('游戏资料-新手',1,12)" :class="{'select':isChecked == 2}">新手</li>
+              <li @mouseenter="goGetList('游戏资料-进阶',1,12)" :class="{'select':isChecked == 3}">进阶</li>
+              <li @mouseenter="goGetList('游戏资料-玩法',1,12)" :class="{'select':isChecked == 4}">玩法</li>
+            </ul>
+        </div>
+
+        <ul class="list_message" style="padding-left: 33px;">
+          <li v-for="item in listData" class="line">
+          <a :href="item.hrefVal" style="text-decoration: none;">
+            <span><span>《</span>{{listName}}<span>》</span></span>
+            <span style="margin-left:15px;width: 610px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+              {{item.title}}
+            </span>
+            <span class="fr" style="margin-right:10px;float:right;">{{item.updated}}</span>
+          </a>
+          </li>
+        </ul>
+
+        <ul class="page" v-show="more1">
+          <li v-if="cur>1"><a v-on:click="cur--,btnClick(cur)">上一页</a></li>
+          <li v-if="cur==1"><a class="banclick">上一页</a></li>
+          <li v-for="index in indexs"  v-bind:class="{ 'active': cur == index }">
+            <a v-on:click="btnClick(index)">{{ index }}</a>
+          </li>
+          <li v-if="cur!=all"><a v-on:click="cur++,btnClick(cur)">下一页</a></li>
+          <li v-if="cur == all"><a class="banclick">下一页</a></li>
+        </ul>
+      </div>
+    </div>
+    <hulai-footer></hulai-footer>
+  </div>
+
+  <script type="text/javascript" src="js/list_zl.js?v=20180118"></script>
+  <script type="text/javascript" src="js/animate.js?v=20180118"></script>
+</body>
+</html>

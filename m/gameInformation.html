@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>《中超风云2》手游官方网站_中超官方授权正版手游</title>
+  <meta name="keywords" content="中超风云、中超风云2、中超风云2官网、中超、足球、中超足球游戏、懂球帝、足球大咖、国脚、国足、U23、中超风云手游、足球手游、恒大、上港、苏宁、权健、申花、国安">
+  <meta name="description" content="中超联赛官方授权游戏，通过极致的3D效果，逼真的AI表现，先进的动补技术和多样的操作模式，还原最真实的中超赛事，品质全面提升的中超风云第二代！">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=640,target-densitydpi=320, minimum-scale=0.5, maximum-scale=2,user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/information.css">
+  <link rel="stylesheet" type="text/css" href="css/components.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="js/common.js?v=20180105"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-activity-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/isMobile.min.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="components/index.js"></script>
+  <script src="lib/swiper.min.js"></script>
+</head>
+<body>
+  <div id="app" v-cloak>
+    <hulai-header></hulai-header>
+    <div class="container">
+      <div class="information_top"></div>
+      <div class="information_content">
+        <div class="information_nav">
+          <span class="first_child">游戏资料</span>
+          <span class="sec_child">主页 > <span style="color:#98ed1e">游戏资料</span></span> 
+        </div>
+        <div class="information_mid">
+          <ul class="sec_nav">
+            <li @click="goGetList('游戏资料-最新',1,9)" :class="{'select':isChecked == 1}">最新</li>
+            <li @click="goGetList('游戏资料-新手',1,9)" :class="{'select':isChecked == 2}">新手</li>
+            <li @click="goGetList('游戏资料-进阶',1,9)" :class="{'select':isChecked == 3}">进阶</li>
+            <li @click="goGetList('游戏资料-玩法',1,9)" :class="{'select':isChecked == 4}">玩法</li>
+          </ul>
+          <ul class="content">
+            <li v-for="item in listData" class="list_all">
+              <a :href="item.hrefVal" style="color:white">
+                <span class="w400">
+                  <span><span>《</span>{{listName}}<span>》</span></span>
+                  <span class="bg_title">{{item.title}}</span>
+                </span>
+                <span class="fr_dis">{{item.updated}}</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="page" v-show="more1">
+            <li v-if="cur>1"><a v-on:click="cur--,btnClick(cur)">上一页</a></li>
+            <li v-if="cur==1"><a class="banclick">上一页</a></li>
+            <li v-for="index in indexs"  v-bind:class="{ 'active': cur == index }">
+              <a v-on:click="btnClick(index)">{{ index }}</a>
+            </li>
+            <li v-if="cur!=all"><a v-on:click="cur++,btnClick(cur)">下一页</a></li>
+            <li v-if="cur == all"><a class="banclick">下一页</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hulai-footer></hulai-footer>
+  </div>
+
+
+  <script type="text/javascript" src="js/information_ctrl.js?v=20180118"></script>
+</body>
+</html>

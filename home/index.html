@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>《中超风云2》手游官方网站_中超官方授权正版手游</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="keywords" content="中超风云、中超风云2、中超风云2官网、中超、足球、中超足球游戏、懂球帝、足球大咖、国脚、国足、U23、中超风云手游、足球手游、恒大、上港、苏宁、权健、申花、国安">
+  <meta name="description" content="中超联赛官方授权游戏，通过极致的3D效果，逼真的AI表现，先进的动补技术和多样的操作模式，还原最真实的中超赛事，品质全面提升的中超风云第二代！">
+  <link rel="stylesheet" type="text/css" href="css/index.css?v=20180105">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="js/common.js?v=20180105"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-activity-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/isMobile.min.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="components/index.js"></script>
+  <script src="lib/swiper.min.js"></script>
+  <script type="text/javascript" src="js/moment.js"></script>
+  <script type="text/javascript" src="js/coor.js"></script>
+  <script type="text/javascript">
+    if (isMobile.any) {
+      var goUrl = '/m/index.html';
+      var url = window.location.href;
+      var urlArr = url.split('?')
+      if (urlArr.length > 1) {
+        goUrl = goUrl + '?' + urlArr[1];
+      }
+      location.replace(goUrl);
+    }
+  </script>
+</head>
+<style>
+  html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container_left .swiper-container {
+      width: 100%;
+      height: 280px;
+    }
+
+    .container_left.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /*background: #fff;*/
+      width: 460px !important;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-ite
+    }
+    .jietu .swiper-container-horizontal>.swiper-pagination-bullets {
+      bottom: 22px;
+      left: 134px;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+      bottom: 50px;
+      left: 134px;
+    }
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 100%;
+      background: white;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: #98ed1e;
+      width: 9px;
+      height: 9px;
+      border-radius: 4px;
+    }
+    [v-cloak] {
+      display: none;
+    }
+    .lunbo {
+      text-align: center;
+      font-size: 18px;
+      /*background: #fff;*/
+      width: 400px !important;
+      transform: translate3d(0px, 0px, -268px) rotateX(0deg) rotateY(0deg) !important;
+      z-index: 1;
+      transition-duration: 0ms;
+      /*margin-right: 60px;*/
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-ite;
+    }
+    .swiper-container-3d .swiper-slide-shadow-bottom, .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right, .swiper-container-3d .swiper-slide-shadow-top {
+      width: 0px;
+      height: 0px;
+    }
+    .swiper_lunbo {
+      width: 100%;
+      height: 445px;
+    }
+    .swiper-slide-prev{
+      /*width: 245px;
+      height: 330px;*/
+      transform: translate3d(0px, 0px, -268px) rotateX(0deg) rotateY(28deg) !important;
+    }
+    .swiper-slide-next{
+      /*width: 245px;
+      height: 330px;*/
+      transform: translate3d(0px, 0px, -268px) rotateX(0deg) rotateY(-28deg) !important;
+    }
+</style>
+<style>
+  .linehight_1{
+    color: #98ed1e!important;
+  }
+</style>
+<body>
+  <div id="app" v-cloak>
+    <hulai-header></hulai-header>
+    <div class="main">
+      <div class="banner">
+        <div class="container">
+          <div class="container_top">
+            <div class="container_left">
+              <div class="swiper-container shouye_swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" v-for="(item, index) in lunboArr">
+                      <a target="_top" :href="item.fields['跳转链接']" style="display:inline-block;width: 490px;">
+                       <img :src="item.fields['图片-PC']" alt="" style="width: 460px;">
+                      </a>
+                      <p class="portal_title">{{item.title}}</p>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="container_right">
+              <ul class="title_nav">
+                <li :class="{'words':isChecked == 1}" v-on:mouseenter="goGetList('新闻公告-最新',1,6)">
+                  <p class="wordhight">最新</p>
+                  <p :class="{'sanjiao':isChecked == 1}"></p>
+                </li>
+                <li :class="{'words':isChecked == 2}" v-on:mouseenter="goGetList('新闻公告-新闻',1,6)">
+                  <p class="wordhight">新闻</p>
+                  <p :class="{'sanjiao':isChecked == 2}"></p>
+                </li>
+                <li :class="{'words':isChecked == 3}" v-on:mouseenter="goGetList('新闻公告-活动',1,6)">
+                  <p class="wordhight">活动</p>
+                  <p :class="{'sanjiao':isChecked == 3}"></p>
+                </li>
+                <li :class="{'words':isChecked == 4}" v-on:mouseenter="goGetList('新闻公告-公告',1,6)">
+                  <p class="wordhight">公告</p>
+                  <p :class="{'sanjiao':isChecked == 4}"></p>
+                </li>
+                <a :href="more_href"><img src="img/more.png" alt="" class="more"></a>
+              </ul>
+
+              <ul class="content">
+                <li v-for="item in listData" class="list_all">
+                  <a target="_blank" :href="item.hrefVal">
+                    <span class="w400">
+                      <span><span>《</span>{{listName}}<span>》</span></span>
+                      <span class="bg_title">{{item.title}}</span>
+                    </span>
+                    <span class="fr_dis">{{item.updated}}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tese">
+        <p style="margin-top:42px;padding-left: 20px;font-size:20px;border-bottom: solid 1px #98ed1e;line-height: 48px;">游戏特色</p>
+        <div class="tese_left left">
+          <ul>
+            <li :class="{'tsbg':isTeSeChecked == 1}" @click="goGetTese('主线副本')">主线副本</li>
+            <li :class="{'tsbg':isTeSeChecked == 2}" @click="goGetTese('核心玩法')">核心玩法</li>
+            <li :class="{'tsbg':isTeSeChecked == 3}" @click="goGetTese('中超特色')">中超特色</li>
+            <li :class="{'tsbg':isTeSeChecked == 4}" @click="goGetTese('阵型战术')">阵型战术</li>
+            <li :class="{'tsbg':isTeSeChecked == 5}" @click="goGetTese('模拟经营')">模拟经营</li>
+          </ul>
+        </div>
+        <div class="tese_right right">
+            <div v-for="(item, index) in teseData" class="">
+              <!-- <a target="_blank" :href="item.hrefVal"> -->
+                <img :src="item.fields['图片-PC']" alt="" style="width: 100%;">
+              <!-- </a> -->
+            </div>
+        </div>
+      </div>
+      <div class="qiuyuan">
+        <p style="margin-top:42px;padding-left: 20px;font-size:20px;border-bottom: solid 1px #98ed1e;line-height: 48px;">球员展示</p>
+        <div class="portal">
+          <div class="swiper-container swiper_lunbo">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="(item, index) in lunboArrTwo">
+                 <img :src="item.fields['图片']" alt="" style="width: 1000px;">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev" style="background-image: url(img/L.png?v=2017.10.23);width:49px;height:79px;background-size:45px 114px;top: 45%;"></div>
+          <div class="swiper-button-next" style="background-image: url(img/R.png?v=2017.10.23);width:49px;height:79px;background-size:45px 114px;top: 45%;"></div>
+
+        </div>
+      </div>
+      <div class="youxi">
+        <div class="youxi_left left">
+          <p style="padding-left: 20px;font-size:20px;border-bottom: solid 1px #98ed1e;line-height: 48px;">游戏资料</p>
+          <div class="youxi_ul">
+            <ul class="title_nav">
+              <li :class="{'words':isZiLiaoChecked == 1}" v-on:mouseenter="goGetZiLiao('游戏资料-最新',1,8)">
+                <p class="wordhight">最新</p>
+                <p :class="{'sanjiao':isZiLiaoChecked == 1}"></p>
+              </li>
+              <li :class="{'words':isZiLiaoChecked == 2}" v-on:mouseenter="goGetZiLiao('游戏资料-新手',1,8)">
+                <p class="wordhight">新手</p>
+                <p :class="{'sanjiao':isZiLiaoChecked == 2}"></p>
+              </li>
+              <li :class="{'words':isZiLiaoChecked == 3}" v-on:mouseenter="goGetZiLiao('游戏资料-进阶',1,8)">
+                <p class="wordhight">进阶</p>
+                <p :class="{'sanjiao':isZiLiaoChecked == 3}"></p>
+              </li>
+              <li :class="{'words':isZiLiaoChecked == 4}" v-on:mouseenter="goGetZiLiao('游戏资料-玩法',1,8)">
+                <p class="wordhight">玩法</p>
+                <p :class="{'sanjiao':isZiLiaoChecked == 4}"></p>
+              </li>
+              <a :href="ziliao_href"><img src="img/more.png" alt="" class="more"></a>
+            </ul>
+            <ul class="content">
+              <li v-for="item in ziliaoData" class="list_all">
+                <a target="_blank" :href="item.hrefVal">
+                  <span class="w400">
+                    <span><span>《</span>{{listName}}<span>》</span></span>
+                    <span class="bg_title">{{item.title}}</span>
+                  </span>
+                  <span class="fr_dis">{{item.updated}}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="youxi_right right">
+          <p style="padding-left: 20px;font-size:20px;border-bottom: solid 1px #98ed1e;line-height: 48px;">游戏截图</p>
+          <div class="jietu">
+            <div class="swiper-container jietu_swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" v-for="(item, index) in lunboArrThree">
+                    <a target="_top" :href="item.fields['跳转链接']" style="display:inline-block;width: 490px;">
+                     <img :src="item.fields['图片']" alt="" style="">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="media">
+        <p style="padding-left: 20px;font-size:20px;border-bottom: solid 1px #98ed1e;line-height: 48px;">合作媒体</p>
+        <div class="coor_foot">
+        <div class="coor">
+          <ul style="list-style:none;"></ul>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <hulai-footer></hulai-footer>
+
+
+  </div>
+  <script type="text/javascript" src="js/animate.js?v=20180118"></script>
+  <script type="text/javascript" src="js/index_ctrl.js?v=20180118"></script>
+</body>
+</html>

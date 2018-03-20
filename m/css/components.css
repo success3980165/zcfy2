@@ -1,0 +1,132 @@
+header {
+  background: url("../img/headtop.jpg") no-repeat center top;
+  height: 72px;
+  width: 100%;
+  position: fixed;
+  z-index: 99
+}
+.bg {
+  width: 100%;
+  background: url("../img/head-bg.jpg") no-repeat center top;
+  height: 570px;
+}
+.head {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.head a {
+  display: block;
+}
+.head img {
+  flex: 2
+}
+.head :first-child {
+  position: absolute;
+}
+.head :nth-child(2) {
+  margin-left: 343px
+}
+.head :nth-child(3) {
+  margin-left: 210px;
+  margin-top: 10px;
+}
+.nav {
+  width: 188px;
+  height: 236px;
+  background: url("../img/nav-bg.png") no-repeat center top;
+  font-size: 19.47px;
+  color: white;
+  position: absolute;
+  right: 0px;
+  top:72px;
+  list-style: none;
+}
+.nav a {
+  color: white;
+}
+.nav li {
+  padding: 24px;
+  padding-left: 52px;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 520px;
+  margin-left: 54px;
+  margin-top: 100px;
+}
+.footer-bottom img{
+  flex:2;
+  padding: 30px;
+}
+.footer-kefu {
+  text-align: center;
+  margin-top: 30px;
+}
+.footer {
+  color: #696969;
+  text-align: center;
+  padding:32px 0px 32px 0px;
+  background: #1d1e22;
+}
+.footer a {
+  color: #696969;
+  text-decoration: none;
+}
+.cover{
+  position: fixed;
+  z-index: 99;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000;
+}
+.qq {
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -125px;
+  z-index: 999;
+}
+.qq img {
+  vertical-align:middle
+}
+.footer-text {
+  font-size: 24px;
+  margin-left: 14px;
+}
+.gzh {
+  width:324px;
+  height: 368px;
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -163px;
+  z-index: 999;
+  border-radius: 15px;
+}
+.gzh p {
+  font-size: 25px;
+}
+.txt {
+  /*width: 180px;*/
+  margin: 0px auto;
+  margin-top: 10px;
+  padding: 0px 10px 0 10px;
+}
+.cross {
+  position: absolute;
+  top: -61px;
+  right: -56px;
+}
+.erweima {
+  text-align: center;
+}
+.erweima img {
+  width: 220px;
+}

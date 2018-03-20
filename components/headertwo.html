@@ -1,0 +1,118 @@
+ <div>
+  <header>
+    <div class="head">
+      <!-- 导航 -->
+      <ul class="nav divcss5_italic">
+        <a href="index.html">
+          <li class="linehight linehight_1">
+            <div class="logo logo_1 left"></div>
+            <div class="left">
+              <p class="big">官方首页</p>
+              <p class="small">HOME</p>
+            </div>
+          </li>
+        </a>
+        <a href="pclist.html?type=zuixin">
+          <li class="linehight linehight_2">
+            <img class="left" src="img/gang.jpg" alt="">
+            <div class="logo logo_2 left"></div>
+            <div class="left">
+              <p class="big">最新活动</p>
+              <p class="small">ACTIVITY</p>
+            </div>
+          </li>
+        </a>
+          <li class="linehight linehight_3 gonglv">
+            <img class="left" src="img/gang.jpg" alt="">
+            <div class="logo logo_3 left"></div>
+            <a href="zllist.html?type=ziliaozuixin">
+              <div class="left">
+                <p class="big">游戏资料</p>
+                <p class="small">DATA</p>
+              </div>
+            </a>
+            <div class="head_ziliao">
+              <a href="zllist.html?type=xinshou">
+                <p style="margin-left:73px">新手指南</p>
+              </a>
+              <a href="zllist.html?type=jinjie">
+                <p style="margin-left:58px">进阶攻略</p>
+              </a>
+              <a href="zllist.html?type=wanfa">
+                <p style="margin-left:44px">玩法活动</p>
+              </a>
+            </div>
+          </li>
+        <li class="linehight  linehight_4 contact_us">
+          <img class="left" src="img/gang.jpg" alt="">
+          <div class="logo logo_4 left"></div>
+          <div class="left">
+            <p class="big">玩家交流</p>
+            <p class="small">INSTERACTION</p>
+          </div>
+          <div class="head_bottom">
+            <img src="img/contact.png" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 浮窗 -->
+    <!-- <div class="float">
+      <div class="float_1 left"></div>
+      <div id="float_2" class="float_2 left">
+        <img style="margin-top: 17px;margin-left: 25px;cursor: pointer;" src="img/float_ewm.png" alt="">
+        <img style="margin-top: 18px;margin-left: 23px;cursor: pointer;" src="img/float_ios.png" alt="">
+        <img style="margin-top: 7px;margin-left: 23px;cursor: pointer;"  src="img/float_android.png" alt="">
+        <ul >
+          <a href="index.html">
+            <li>官网首页</li>
+          </a>
+          <a href="pclist.html?type=zuixin">
+            <li>新闻公告</li>
+          </a>
+          <a href="#">
+            <li>游戏特色</li>
+          </a>
+          <a href="#">
+              <li>球员展示</li>
+          </a>
+          <a href="">
+              <li>新手指南</li>
+          </a>
+        </ul>
+        <img @click="qidai()" src="img/libao.png" alt="" style="cursor: pointer;">
+      </div>
+    </div> -->
+    <!-- <div class="downloadBg">
+      <div class="smallbg">
+        <div class="downleft">
+          <div class="downleft_up">
+            <img src="img/erweima.jpg" alt="" class="erweima hand left flex">
+            <div class="right" style="width:186px;">
+              <img src="img/down_ios.png" alt="" class="flex hand">
+              <img src="img/down_andriod.jpg" alt="" class="flex hand">
+            </div>
+          </div>
+          <div class="downleft_down" style="width:330px;">
+            <img src="img/down_pc.jpg" alt="" class="flex hand">
+          </div>
+
+        </div>
+        <div class="downright flex">
+          <img src="img/down_yuyue.jpg" alt="" class="flex hand">
+        </div>
+        <a href="javascript:void(0)" class="video"><img src="img/video.png" alt="" @click="clickVideo()"></a>
+      </div>
+    </div> -->
+
+  </header>
+  <!-- 遮罩层 -->
+  <div id="cover" v-show="cover"></div>
+  <!-- 视频内容播放 -->
+  <div class="video_player" v-show="video_play" >
+    <img src="img/close_video.png" class="video_close" @click="closeVideo()">
+    <video width="640" height="360" src="http://apk.dsgl.hulai.com/dsglfile/shipin/xuanchuanshipin1229.mp4" controls="controls">
+      无法支持html5浏览器
+    </video>
+  </div>
+</div>

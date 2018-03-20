@@ -1,0 +1,101 @@
+* {
+  margin:0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+body * { 
+  max-height: 999999px;
+}
+#app {
+  width: 100%;
+  background:#2e313a;
+}
+
+.tools {
+  position: relative;
+  top:410px;
+}
+.tools :first-child {
+  float: right;
+  margin-right: 80px;
+  margin-top: 41px;
+}
+/*.tools :nth-child(2) {
+  float: left;
+  margin-top: 91px;
+  margin-left: 42px;
+}
+.tools :nth-child(3) {
+  float: right;
+  margin-right: 64px;
+  margin-top: 44px;
+}*/
+.news-title {
+  color: white;
+  font-size: 30px;
+  margin-left: 45px;
+  margin-top: 10px;
+}
+.content {
+  margin-left: 46px;
+  list-style: none;
+  margin-top: 20px;
+}
+.list_all {
+  font-size: 22px;
+  height: 65px;
+  width: 93%;
+  line-height: 65px;
+  border-bottom: 1px solid #3e4e36;
+}
+
+.fr_dis {
+  float: right;
+  /*margin-right: 42px;*/
+}
+.more {
+  text-align: center;
+  margin-top: 30px;
+}
+.gameFeature {
+  height: 440px;
+}
+.featureNav {
+  list-style: none;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 43px;
+}
+.featureNav li {
+  float: left;
+  font-size: 19.5px;
+  color: white;
+  padding: 17px;
+}
+.featureImg {
+  height: 400px;
+}
+.featureBg {
+  background: url("../img/featureNavBg.jpg");
+}
+.informationNav {
+  list-style: none;
+  width: 86%;
+  margin-left: 49px;
+  height: 66px;
+  border-bottom: 1px solid #98ed1e;
+
+}
+.ifNav{
+  float: left;
+  font-size: 26.85px;
+  color: white;
+  padding: 23px;
+}
+.informationBg{
+  color: #98ed1e; 
+}
+
+

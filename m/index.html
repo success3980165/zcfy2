@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>《中超风云2》手游官方网站_中超官方授权正版手游</title>
+  <meta name="keywords" content="中超风云、中超风云2、中超风云2官网、中超、足球、中超足球游戏、懂球帝、足球大咖、国脚、国足、U23、中超风云手游、足球手游、恒大、上港、苏宁、权健、申花、国安">
+  <meta name="description" content="中超联赛官方授权游戏，通过极致的3D效果，逼真的AI表现，先进的动补技术和多样的操作模式，还原最真实的中超赛事，品质全面提升的中超风云第二代！">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=640,target-densitydpi=320, minimum-scale=0.5, maximum-scale=2,user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/components.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="js/common.js?v=20180105"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-activity-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/isMobile.min.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="components/index.js"></script>
+  <script src="lib/swiper.min.js"></script>
+  <script type="text/javascript">
+    if (!isMobile.any) {
+      var goUrl = '/index.html';
+      var url = window.location.href;
+      var urlArr = url.split('?')
+      if (urlArr.length > 1) {
+        goUrl = goUrl + '?' + urlArr[1];
+      }
+      location.replace(goUrl);
+    }
+  </script>
+</head>
+<style>
+  html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 290px;
+      margin-top: 10px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /*background: #fff;*/
+      /*width: 497px !important;*/
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-ite
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+      bottom: 20px;
+      /*left: 134px;*/
+    }
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      border-radius: 100%;
+      background: white;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: #98ed1e;
+      width: 20px;
+      height: 20px;
+      border-radius: 15px;
+    }
+    [v-cloak] {
+      display: none;
+    }
+</style>
+<body>
+  <div id="app" v-cloak>
+    <hulai-header></hulai-header>
+    <div class="bg">
+      <div class="tools">
+        <!-- <img src="img/bofang.png" alt=""> -->
+        <!-- <img src="img/yuyue.jpg" alt=""> -->
+        <img src="img/gifs.png" alt="" @click="express()">
+      </div>
+    </div>
+    <!-- 新闻公告 -->
+    <div class="news">
+      <p class="news-title">新闻公告</p>
+      <div class="swiper-container shouye_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="(item, index) in lunboArr">
+              <a target="_top" :href="item.fields['跳转链接']" style="display:inline-block;width: 497px;margin-top:-31px;margin-left: -52px;">
+               <img :src="item.fields['图片-移动']" alt="" style="width: 554px;">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+      <ul class="content">
+        <li v-for="item in listData" class="list_all">
+          <a :href="item.hrefVal" style="color:white">
+            <span class="w400">
+              <span>{{listName}}</span>
+              <span class="bg_title">{{item.title}}</span>
+            </span>
+            <span class="fr_dis">{{item.updated}}</span>
+          </a>
+        </li>
+      </ul>
+      <p class="more"><a href="news.html?type=xinwen"><img src="img/more.png" alt=""></a></p>
+    </div>
+    <!-- 游戏特色 -->
+    <div class="gameFeature">
+      <p class="news-title">游戏特色</p>
+      <ul class="featureNav">
+        <li :class="{'featureBg':isChecked == 1}" @click="goGetFeature('主线副本')">主线副本</li>
+        <li :class="{'featureBg':isChecked == 2}" @click="goGetFeature('核心玩法')">核心玩法</li>
+        <li :class="{'featureBg':isChecked == 3}" @click="goGetFeature('中超特色')">中超特色</li>
+        <li :class="{'featureBg':isChecked == 4}" @click="goGetFeature('阵型战术')">阵型战术</li>
+        <li :class="{'featureBg':isChecked == 5}" @click="goGetFeature('模拟经营')">模拟经营</li>
+      </ul>
+      <div class="featureImg" v-for="(item, index) in featureArr">
+        <!-- <a href="" class="tiaozhuan" target="_top" :href="item.fields['跳转链接']" style="display:inline-block;width: 497px;margin-left: 43px;"><img :src="item.fields['图片-移动']" alt="" style="width: 560px;"></a> -->
+        <img :src="item.fields['图片-移动']" alt="" style="width: 560px;margin-left: 43px;">
+      </div>
+    </div>
+    <!-- 游戏资料 -->
+    <div class="gameInformation">
+      <p class="news-title">游戏资料</p>
+      <ul class="informationNav">
+        <li class=ifNav :class="{'informationBg':isInformation == 1}" @click="goGetInformation('游戏资料-最新',1,6)" style="margin-left: 63px;">最新</li>
+        <li class=ifNav :class="{'informationBg':isInformation == 2}" @click="goGetInformation('游戏资料-新手',1,6)">新手</li>
+        <li class=ifNav :class="{'informationBg':isInformation == 3}" @click="goGetInformation('游戏资料-进阶',1,6)">进阶</li>
+        <li class=ifNav :class="{'informationBg':isInformation == 4}" @click="goGetInformation('游戏资料-玩法',1,6)">玩法</li>
+      </ul>
+      <ul class="content">
+        <li v-for="item in informationData" class="list_all">
+          <a :href="item.hrefVal" style="color:white">
+            <span class="w400">
+              <span>{{informationName}}</span>
+              <span class="bg_title">{{item.title}}</span>
+            </span>
+            <span class="fr_dis">{{item.updated}}</span>
+          </a>
+        </li>
+      </ul>
+      <p class="more"><a :href="more_href"><img src="img/more.png" alt=""></a></p>
+    </div>
+
+    <hulai-footer></hulai-footer>
+  </div>
+
+  <script type="text/javascript" src="js/index_ctrl.js?v=20180118"></script>
+</body>
+</html>
